@@ -1,0 +1,66 @@
+[id=rental] {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0px auto 10px auto;
+  
+
+  section {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .figure {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+
+    ul {
+      display: flex;
+      flex-flow: wrap;
+      gap: 20px;
+      margin: 20px 0;
+      list-style: none;
+      padding: 0;
+
+      label {
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primary-color);
+        color: var(--white);
+
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section {
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: end;
+    }
+
+    .figure {
+      flex-flow: column-reverse;
+      justify-content: start;
+      align-items: center;
+    }
+
+    header ul label {
+      border-radius: 12px;
+    }
+  }
+}
