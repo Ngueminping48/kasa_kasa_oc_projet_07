@@ -1,0 +1,21 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  
+    .primary {
+      color: var(--primary-color);
+    }
+  
+    .secondary {
+      color: var(--secondary-color);
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .rating {
+        font-size: 1.2rem;
+    }
+}

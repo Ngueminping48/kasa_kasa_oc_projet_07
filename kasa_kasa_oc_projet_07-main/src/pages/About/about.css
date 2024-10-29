@@ -1,0 +1,23 @@
+[id=about] {
+  width: 90%;
+  margin: 0px auto 10px auto;
+
+  .about__collapse {
+    margin: 10px auto 10px auto;
+  }
+
+
+
+  @media (min-width: 1200px) {
+    section {
+      margin: 50px 100px;
+      width: calc(100% - 200px);
+      padding: 0 100px;
+    }
+    .about__collapse {
+      .collapse {
+        width: 80%;
+      }
+    }
+  }
+}
